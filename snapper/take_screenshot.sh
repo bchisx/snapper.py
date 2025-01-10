@@ -12,8 +12,14 @@ FILENAME=$(date +"$FILENAME_FORMAT")
 # Full path to save the screenshot
 FILEPATH="$SAVE_DIR/$FILENAME"
 
-# Take the screenshot using grim
-grim "$FILEPATH"
+# Check if the system is using X11
+if [ "$XDG_SESSION_TYPE" = "x11" ]; then
+  # Take the screenshot using maim
+  maim "$FILEPATH"
+else
+  # Take the screenshot using grim
+  grim "$FILEPATH"
+fi
 
 # Print a message
 echo "Screenshot taken and saved as $FILEPATH"
