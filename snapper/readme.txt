@@ -3,7 +3,7 @@ be sure to be on a linux or other unixlike system that may have grim utility in 
 give execute permission to target shell script. be sure to be running the right shell.
 
 execute python script with the following command:
-python3 script.py
+python3 snapper.py
 
 while in the snapper directory from whereever you got this.
 
