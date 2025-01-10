@@ -27,5 +27,3 @@ if __name__ == "__main__":
             take_screenshot()
             time.sleep(repeat_interval)
         time.sleep(interval)
- 
-

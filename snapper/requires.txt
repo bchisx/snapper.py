@@ -1,4 +1,0 @@
-requires:
-Python 3.6
-grim terminal utility
-grep terminal utility

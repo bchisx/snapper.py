@@ -11,6 +11,7 @@ FILENAME=$(date +"$FILENAME_FORMAT")
 
 # Full path to save the screenshot
 FILEPATH="$SAVE_DIR/$FILENAME"
+echo $FILEPATH
 
 # Take the screenshot using grim
 grim "$FILEPATH"

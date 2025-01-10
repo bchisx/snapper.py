@@ -1,12 +1,31 @@
-this is a cyclic screenshot utility. that is, it helps you take screenshots over and over on a cycle.
+# snapper.py 
+A screenshot utility designed to help taking a sequence of screenshots.
 
-be sure to be on a linux or other unixlike system that may have grim utility in terminal, and grep utility
 
-give execute permission to target shell script. be sure to be running the right shell.
+## Requirements
+* python3
+* grim
+* grep
 
-execute python script with the following command:
+Make sure that you operating system supports both `grep` and `grim`.
+
+
+## Installing
+To clone this git repository, run:
+```
+git clone https://https://github.com/bchisx/snapper.py.git
+```
+
+
+## Usage
+All scripts are located in `snapper` directory.
+
+Execute python script with the following command:
+```
 python3 snapper.py
+```
 
-while in the snapper directory from whereever you got this.
-
-this will run the program according to the config. the code is open also, of course, for alteration, but for the imperative programming phobic, please do request any other aspects of configuration that might be desired. 
+To take a single screenshot, run:
+```
+./take_screenshot.sh
+```
