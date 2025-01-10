@@ -1,0 +1,2 @@
+interval=300
+filename_format=%Y%m%d_%H%M%S.png
