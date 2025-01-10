@@ -19,9 +19,13 @@ def take_screenshot():
 if __name__ == "__main__":
     config = read_config()
     interval = int(config.get('interval', 300))  # Default to 300 seconds if not specified
+    repeat_count = int(config.get('repeat_count', 1))  # Default to 1 if not specified
+    repeat_interval = int(config.get('repeat_interval', 1))  # Default to 1 second if not specified
 
     while True:
-        take_screenshot()
+        for _ in range(repeat_count):
+            take_screenshot()
+            time.sleep(repeat_interval)
         time.sleep(interval)
  
 
