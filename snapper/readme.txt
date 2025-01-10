@@ -1,3 +1,5 @@
+this is a cyclic screenshot utility
+
 be sure to be on a linux or other unixlike system that may have grim utility in terminal, and grep utility
 
 give execute permission to target shell script. be sure to be running the right shell.
